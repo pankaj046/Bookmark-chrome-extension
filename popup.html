@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarks</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #1d1d1f;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      line-height: 1.5;
+      padding: 20px;
+      width: 100vh;
+    }
+
+    .title {
+      padding-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+      word-wrap: break-word;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100px;
+    }
+
+   .grid-item h2 {
+     font-size: 16px;
+     margin-bottom: 10px;
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     text-overflow: ellipsis;
+     max-height: 3.2em; 
+     line-height: 1.6em;
+     word-wrap: break-word;
+   }
+
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .remove {
+      background: #ff4d4d;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="title">Bookmarks</h2>
+  <div class="wrapper" id="bookmarksContainer"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
