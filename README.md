@@ -17,6 +17,10 @@ To install the extension manually:
 3.  Enable **Developer mode** (toggle in the top right corner).
 4.  Click **Load unpacked** and select the extension folder.
 
+Screenshot
+
+<img src="https://raw.githubusercontent.com/pankaj046/Bookmark-chrome-extension/refs/heads/main/screenshot.png" width="200" height="200"/>
+
 Usage
 -----
 
