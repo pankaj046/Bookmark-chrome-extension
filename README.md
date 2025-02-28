@@ -37,7 +37,6 @@ Permissions
 This extension requires the following permissions:
 
 *   `bookmarks` - To read and manage bookmarks.
-*   `tabs` - To open links in a new tab.
 
 Support
 -------
